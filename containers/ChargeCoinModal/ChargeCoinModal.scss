@@ -1,0 +1,58 @@
+.ChargeCoinModal {
+
+  &-trans-id {
+    font-size: 1.6rem;
+    color: $ebony-clay;
+    line-height: 2.2rem;
+
+    span {
+      color: $dodger-blue;
+    }
+  }
+
+  &-badge {
+    background: $feta;
+    color: $forest-green;
+    padding: 1.2rem;
+    border-radius: .2rem;
+    column-gap: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    margin: 1.6rem 0;
+
+    .Icon {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &-row {
+    padding: 1.6rem 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $mischka;
+    }
+
+    &-text {
+      font-size: 1.6rem;
+      color: $gray;
+      line-height: 2.2rem;
+      column-gap: .4rem;
+
+      strong {
+        font-weight: 600;
+        color: $ebony-clay;
+      }
+    }
+
+    .Icon {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &-submit {
+    margin-top: 2.4rem;
+  }
+}

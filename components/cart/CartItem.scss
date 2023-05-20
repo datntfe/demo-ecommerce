@@ -1,0 +1,40 @@
+.cart-item{
+    border-bottom: 1px solid #eeeeee;
+    &:last-child {
+      border-bottom: none;
+    }
+    .image {
+      border: 1px solid #eeeeee;
+      border-radius: 4px;
+      margin-right: 10px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-color: #F0F0F0;
+      img{
+        max-height: 80px;
+      }
+    }
+  
+    .atribute {
+
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .discount-price {
+      font-size: 11px;
+ 
+    }
+    .price {
+      font-size: 13px;
+    }
+    .money {
+      font-size: 13px;
+    }
+    .title a {
+      word-break: break-word;
+    }
+}

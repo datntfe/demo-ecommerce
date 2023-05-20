@@ -1,0 +1,58 @@
+.PricesForm {
+  &-options{
+    margin-bottom: 1.6rem;
+
+    &-item {
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 2rem;
+      color: $dove-gray;
+      padding: 1.2rem;
+      text-align: center;
+      cursor: pointer;
+      transition: $common-transition;
+      background: $alabaster;
+      border-radius: .8rem;
+      white-space: nowrap;
+      @include ellipsis(1);
+  
+      &.active,
+      &:hover {
+        background: $gold;
+      }
+    }
+  }
+
+  &-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $mine-shaft;
+    line-height: 1.6rem;
+    margin-bottom: 1.2rem;
+
+    &-value {
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      font-weight: 500;
+      margin-bottom: 2.8rem;
+      color: $ebony-clay;
+    }
+  }
+
+  &-form {
+    margin-bottom: 1.6rem;
+    column-gap: .4rem;
+    .Input {
+      flex: 1;
+
+      .ant-input-affix-wrapper {
+        border-radius: .8rem;
+      }
+
+      .ant-input {
+        height: 4rem;
+      }
+    }
+  }
+}

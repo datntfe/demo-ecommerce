@@ -1,0 +1,224 @@
+.ProductDetail {
+  background: $white;
+  padding: 1.6rem;
+  border-radius: .4rem;
+
+  &-carousel {
+    &-main {
+      position: relative;
+
+      &-badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        max-width: 12rem;
+        max-height: 8.5rem;
+        pointer-events: none;
+        @include centerOriginImage;
+      }
+
+      .slick-slide {
+        &>div {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      &-item {
+        position: relative;
+        width: 100%;
+        max-width: 56rem;
+        height: 56rem;
+        margin: 0 auto;
+
+        @media (max-width: 575px) {
+          height: 42rem;
+        }
+      }
+    }
+
+    &-list {
+      max-width: 36rem;
+      margin: 2.4rem auto 0;
+
+      .slick-arrow {
+        border-radius: 50%;
+        background: rgba($black, 0.1);
+        border-color: rgba($black, 0.1);
+        width: 4rem;
+        height: 4rem;
+        border: none;
+
+        .Icon {
+          width: 2.4rem !important;
+          height: 2.4rem !important;
+        }
+
+        &.slick-prev {
+          left: -1.6rem;
+        }
+
+        &.slick-next {
+          right: -1.6rem;
+        }
+      }
+
+      .slick-slide {
+        &>div {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      &-item {
+        position: relative;
+        padding: 0 .8rem;
+        max-width: 8rem;
+        width: 100%;
+        height: 8rem;
+        border-radius: .8rem;
+        border: 1px solid transparent;
+        overflow: hidden;
+        margin: 0 auto;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          border-color: $gold;
+        }
+      }
+    }
+  }
+
+  &-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 3.4rem;
+    margin-bottom: 2rem;
+
+    &-badge {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      font-weight: 700;
+      padding: .4rem 1rem;
+      background: linear-gradient(180deg, #FFD600 3.5%, #FFC200 96.6%);
+      border-radius: .4rem;
+      color: $black;
+      margin: 0 0 0 1rem;
+      transform: translateY(-25%);
+      display: inline-block;
+    }
+  }
+
+  &-rate {
+    column-gap: .8rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba($gray, 0.2);
+    margin-bottom: 2.4rem;
+
+    &-text {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      color: $ebony-clay;
+    }
+  }
+
+  &-price {
+    column-gap: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    color: $ebony-clay;
+    margin-bottom: 1.8rem;
+
+    del {
+      font-size: 2.6rem;
+      font-weight: 500;
+      line-height: 3.6rem;
+      color: $guardsman-red;
+    }
+  }
+
+  &-options {
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid rgba($gray, 0.2);
+    margin-bottom: 2.4rem;
+  }
+
+  &-action {
+    padding: 1.6rem 0;
+    margin-bottom: 2.4rem;
+
+    &-title {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 2.6rem;
+      column-gap: .8rem;
+      margin-bottom: 0.8rem;
+
+      strong {
+        font-weight: 700;
+        column-gap: .4rem;
+
+        .Icon {
+          width: 2.4rem;
+          height: 2.4rem;
+          margin-top: -0.2rem;
+        }
+      }
+    }
+
+    &-btn {
+      max-width: 41rem;
+      background: $gold;
+      border-radius: .8rem;
+      overflow: hidden;
+      display: flex;
+      padding: .8rem;
+
+      &-image {
+        position: relative;
+        width: 100%;
+        max-width: 24rem;
+        height: 3rem;
+        margin: auto;
+      }
+    }
+  }
+
+  &-delivery {
+    margin-bottom: 2.4rem;
+
+    &-address {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      color: $tundora;
+      font-weight: 500;
+      column-gap: .8rem;
+
+      strong {
+        font-weight: 700;
+        color: $ebony-clay;
+      }
+
+      .Icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.8rem;
+        display: inline-block;
+      }
+    }
+
+    &-change {
+      font-size: 1.4rem;
+      font-weight: 500;
+      text-decoration: underline;
+      color: $dodger-blue;
+      cursor: pointer;
+      white-space: nowrap;
+      @include hoverOpacity;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+#brands{
+    .item-brand{
+        height: 420px;
+        .title{
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-weight: 700;
+font-size: 64px;
+line-height: 1.3em;
+        }
+        .button-a{
+            color: #FFFFFF;
+            font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+border:1px solid #FFFFFF;
+padding:10px 30px;
+border-radius: 2px;
+&:hover{
+    color:#000000;
+    background-color: #FFFFFF;
+}
+        }
+    }
+}
+

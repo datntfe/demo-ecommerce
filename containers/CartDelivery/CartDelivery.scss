@@ -1,0 +1,47 @@
+.CartDelivery {
+  .ant-form > .ant-row {
+    @media (max-width: 768px) {
+      row-gap: 16px !important;
+    }
+  }
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+
+  &-address {
+    margin-bottom: 3.2rem;
+
+    &-form {
+      margin-bottom: 3.2rem;
+    }
+
+    .AddressCard {
+      margin-bottom: 2.4rem;
+    }
+
+    .Button {
+      width: fit-content;
+    }
+  }
+
+  &-submit {
+    margin-top: 2.6rem;
+
+    .Button {
+      max-width: 30rem;
+      width: 100%;
+    }
+  }
+
+  &-method {
+    padding: 2.4rem 1.6rem;
+    border-radius: .2rem;
+    border: 1px solid $mischka;
+
+    .DeliveryCard {
+      &:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}

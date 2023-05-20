@@ -1,0 +1,18 @@
+.CartPage {
+  &-wrapper {
+    padding: 6.4rem 0;
+  }
+
+  &-title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.6rem;
+    color: $ebony-clay;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+  }
+
+  .ProductsCarousel {
+    margin-top: 6.4rem;
+  }
+}

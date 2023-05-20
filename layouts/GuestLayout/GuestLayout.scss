@@ -1,0 +1,17 @@
+.GuestLayout {
+  &-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  &-body {
+    padding-top: 15.8rem;
+
+    @media (max-width: 991px) {
+      padding-top: 6.6rem;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.MemberCard{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  ul,li{
+    list-style: none;
+  }
+  .Icon svg{
+    width: auto;
+  }
+  &-header{
+    display: flex;
+    align-items: center;
+    &-title{
+      font-weight: 700;
+      font-size: 16px;
+      color: $ebony-clay;
+      margin-left: 8px;
+    }
+  }
+  &-body{
+    margin-top: 13px;
+    margin-bottom: 16px;
+    &-item{
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &-text{
+        color: $ebony-clay;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.CartPayment {
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+
+  .CartPaymentMethod {
+    &:not(:last-child) {
+      border-bottom: 1px solid $mischka;
+    }
+  }
+
+  &-card-info {
+    & > .ant-row {
+      @media (max-width: 575px) {
+        row-gap: 16px !important;
+      }
+    }
+  }
+
+  &-submit {
+    margin-top: 2.6rem;
+
+    .Button {
+      max-width: 30rem;
+      width: 100%;
+    }
+  }
+}

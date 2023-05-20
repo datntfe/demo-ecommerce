@@ -1,0 +1,53 @@
+.HistoryPaymentCard {
+  border: 1px solid $silver;
+  border-radius: .8rem;
+  padding: 1.6rem;
+  column-gap: 1.2rem;
+
+  &-icon {
+    .Icon {
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+  }
+
+
+  &-body {
+    flex: 1;
+
+    &-item {
+      font-size: 1.6rem;
+      color: $ebony-clay;
+      line-height: 2.2rem;
+    }
+
+    &-time {
+      color: $gray;
+      font-size: 14px;
+      line-height: 1.8rem;
+    }
+  }
+
+  &-status {
+    &-success {
+      color: $forest-green;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+
+    &-coin {
+      margin-top: .8rem;
+      column-gap: .8rem;
+      color: $ebony-clay;
+      font-weight: 600;
+      font-size: 2rem;
+
+      .Icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        transform: translateY(-15%);
+      }
+    }
+  }
+}

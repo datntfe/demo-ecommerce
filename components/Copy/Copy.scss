@@ -1,0 +1,17 @@
+.Copy {
+  column-gap: .8rem;
+  cursor: pointer;
+
+  .Icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-top: -.2rem;
+  }
+
+  &-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: $dodger-blue;
+  }
+}

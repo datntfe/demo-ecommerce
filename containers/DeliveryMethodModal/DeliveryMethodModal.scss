@@ -1,0 +1,23 @@
+.DeliveryMethodModal {
+  &-method {
+    padding: 2.4rem 1.6rem;
+    border-radius: .2rem;
+    border: 1px solid $mischka;
+
+    .DeliveryCard {
+      &:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+
+  &-submit {
+    margin-top: 3.2rem;
+
+    .Button {
+      margin-left: auto;
+      width: 100%;
+      max-width: 30rem;
+    }
+  }
+}

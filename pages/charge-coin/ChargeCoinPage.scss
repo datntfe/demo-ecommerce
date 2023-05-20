@@ -1,0 +1,62 @@
+.ChargeCoinPage {
+  .MyCoinCard {
+    margin-bottom: 2.4rem;
+  }
+
+  &-title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+    color: $ebony-clay;
+    margin-bottom: 1.6rem;
+    font-weight: 500;
+  }
+
+  &-add-coin-form {
+    margin-bottom: 2.4rem;
+    max-width: 30rem;
+  }
+
+  &-list {
+    margin-bottom: 4rem;
+
+    &-item {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2.4rem;
+      color: $ebony-clay;
+      cursor: pointer;
+      padding: 1.2rem;
+      background: $gallery;
+      border-radius: .8rem;
+      transition: $common-transition;
+      text-align: center;
+
+      &:hover,
+      &.active {
+        background: $ebony-clay;
+        color: $gold;
+      }
+    }
+  }
+
+  &-method {
+    margin-bottom: 4rem;
+    padding: 2.4rem 1.6rem;
+    border-radius: .2rem;
+    border: 1px solid $mischka;
+
+    .DeliveryCard {
+      &:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+
+  &-submit {
+    .Button {
+      width: 100%;
+      max-width: 24rem;
+    }
+  }
+}

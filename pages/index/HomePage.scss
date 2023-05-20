@@ -1,0 +1,19 @@
+.HomePage {
+  .ProductsList,
+  .BrandsList,
+  .ProductsCarousel,
+  &-banner {
+    margin-bottom: 6.4rem;
+  }
+
+  &-video {
+    margin-bottom: 6.4rem;
+
+    &-btn {
+      opacity: 0.8;
+      cursor: pointer;
+      width: 24rem;
+      height: 24rem;
+    }
+  }
+}

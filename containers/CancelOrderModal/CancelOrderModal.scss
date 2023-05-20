@@ -1,0 +1,26 @@
+.CancelOrderModal {
+  &-wrapper {
+    .ant-form {
+      &-item {
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+
+  &-text {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: $mine-shaft;
+  }
+
+  &-warning {
+    padding: 1.2rem 1.6rem;
+    border-radius: .4rem;
+    background: $gallery;
+    margin: 3.2rem 0;
+  }
+
+  &-submit {
+    margin-top: 3.2rem;
+  }
+}

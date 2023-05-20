@@ -1,0 +1,35 @@
+// Override bootstrap variables.
+// https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss
+
+// // colors
+
+// $primary: #d33023 !default;
+// $success: #1ab759 !default;
+// $warning: #ff9900 !default;
+// $danger: #ff3333 !default;
+
+// Grid breakpoints
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  ml: 1024px,
+  xl: 1200px,
+  xxl: 1441px
+) !default;
+
+// Grid containers
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  ml: 1000px,
+  xl: 1294px,
+  xxl: 1295px
+) !default;
+
+// collum gutters
+$grid-gutter-width: 20px !default;

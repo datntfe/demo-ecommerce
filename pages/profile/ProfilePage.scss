@@ -1,0 +1,45 @@
+.ProfilePage {
+  .ant-form {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  &-avatar {
+    column-gap: 1.6rem;
+
+    &-upload {
+      flex: 0 0 7.6rem;
+      max-width: 7.6rem;
+    }
+
+    &-info {
+      &-title {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: $ebony-clay;
+        margin-bottom: 0.8rem;
+      }
+
+      &-description {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: $gray;
+        margin-bottom: 0.8rem;
+
+        &.action {
+          font-weight: 700;
+          color: $dodger-blue;
+          cursor: pointer;
+          @include hoverOpacity;
+        }
+      }
+    }
+  }
+
+  &-submit {
+    margin-top: 4rem;
+  }
+}

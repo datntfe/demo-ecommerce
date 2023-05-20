@@ -1,0 +1,141 @@
+.ProductDetailRate {
+  background: $white;
+  padding: 1.6rem;
+  border-radius: .4rem;
+
+
+  &-main {
+    margin-bottom: 3.2rem;
+
+    & > .ant-row {
+      @media (max-width: 991px) {
+        flex-wrap: wrap !important;
+        & >.ant-col {
+          flex: 0 0 100% !important;
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+
+  &-comments {
+    margin-bottom: 3.2rem;
+
+    .Comment {
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &-load-more {
+      .Button {
+        width: fit-content;
+      }
+    }
+  }
+
+  &-overview {
+    min-width: 35rem;
+    padding-right: 6.4rem;
+
+    @media (max-width: 991px) {
+      padding-right: 0;
+      min-width: unset;
+    }
+
+    .Icon {
+      transform: translateY(-30%);
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+
+    &-header {
+      column-gap: 1.6rem;
+      margin-bottom: 0.8rem;
+
+      &-title {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: $ebony-clay;
+      }
+
+      &-stars {
+        column-gap: .4rem;
+      }
+
+      &-text {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color: $ebony-clay;
+      }
+    }
+
+    &-body {
+      &-item {
+        column-gap: .8rem;
+
+        &:not(:last-child) {
+          margin-bottom: 0.8rem;
+        }
+
+        .Icon {
+          transform: translateY(-20%);
+        }
+
+        &-bar {
+          position: relative;
+          width: 100%;
+          border-radius: .4rem;
+          height: .8rem;
+          flex: 1;
+
+          &-process {
+            @include fullAbsolute;
+            background: linear-gradient(180deg, #FFD600 3.5%, #FFC200 96.6%);
+            border-radius: .4rem;
+            height: 100%;
+          }
+        }
+
+        &-text {
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 1.8rem;
+          color: $ebony-clay;
+
+          &:last-child {
+            flex: 0 0 4rem;
+            max-width: 4rem;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  &-images {
+    padding: 0 6.4rem;
+    border-left: 1px solid $gallery;
+
+    @media (max-width: 991px) {
+      padding: 0;
+      border: none;
+    }
+
+    &-item {
+      position: relative;
+      width: 8rem;
+      height: 8rem;
+      border-radius: .4rem;
+      overflow: hidden;
+      cursor: pointer;
+      transition: $common-transition;
+      border: 1px solid transparent;
+
+      &:hover {
+        border-color: $gold;
+      }
+    }
+  }
+}

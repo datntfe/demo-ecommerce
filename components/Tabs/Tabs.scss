@@ -1,0 +1,135 @@
+.Tabs {
+  &-total {
+    width: 1.8rem;
+    max-width: 1.8rem;
+    flex: 0 0 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    margin-left: .8rem;
+    background: linear-gradient(180deg, #FFD600 3.5%, #FFC200 96.6%);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $ebony-clay;
+  }
+
+  .ant-tabs-nav-operations {
+    display: none !important;
+  }
+
+  .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+    overflow-x: auto;
+  }
+
+  .ant-tabs-top>.ant-tabs-nav,
+  .ant-tabs-bottom>.ant-tabs-nav,
+  .ant-tabs-top>div>.ant-tabs-nav,
+  .ant-tabs-bottom>div>.ant-tabs-nav {
+    margin-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .ant-tabs-nav {
+    margin-bottom: 3.2rem !important;
+
+    .ant-tabs-nav-wrap {
+      border-bottom: 1px solid $mischka;
+    }
+  }
+
+  .ant-tabs {
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+
+    .ant-tabs-tab {
+      position: relative;
+      padding: .8rem 0;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.2rem;
+      transition: $common-transition;
+      margin: 0 2.4rem 0 0;
+
+      &::before {
+        position: absolute;
+        content: '';
+        transition: $common-transition;
+        height: .2rem;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%) scaleX(0);
+        bottom: 0;
+        background: $gold;
+      }
+
+      &:hover {
+        .ant-tabs-tab-btn {
+          color: $ebony-clay;
+        }
+      }
+
+      .ant-tabs-tab-btn {
+        transition: $common-transition;
+        color: $gray;
+      }
+
+      &.ant-tabs-tab-active {
+        background: $white;
+
+        &::before {
+          transform: translateX(-50%) scaleX(1);
+        }
+
+        .ant-tabs-tab-btn {
+          color: $black;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+
+  &.RECTANGLE {
+    .ant-tabs {
+      .ant-tabs-nav {
+        .ant-tabs-nav-wrap {
+          border-bottom: none;
+          padding: .4rem;
+          background: $gallery;
+          border-radius: .8rem;
+        }
+      }
+
+      .ant-tabs-nav-list {
+        width: 100%;
+        column-gap: .4rem;
+
+        .ant-tabs-tab {
+          flex: 1;
+          justify-content: center;
+          border-radius: .8rem;
+          margin: 0;
+          padding: 0.8rem;
+
+          .ant-tabs-tab-btn {
+            font-size: 1.4rem;
+          }
+
+          &.ant-tabs-tab-active {
+            background: $ebony-clay;
+
+            .ant-tabs-tab-btn {
+              color: $gold;
+            }
+          }
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

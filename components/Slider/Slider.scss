@@ -1,0 +1,33 @@
+.Slider {
+  .ant-slider {
+    &:hover {
+      .ant-slider-track {
+        background: $gold;
+      }
+
+      .ant-slider-handle:not(.ant-tooltip-open) {
+        border-color: $gold;
+      }
+    }
+  }
+
+  .ant-slider-rail {
+    height: 2px;
+  }
+
+  .ant-slider-track {
+    height: 2px;
+    background: $ebony-clay;
+  }
+
+  .ant-slider-handle {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 1px solid $ebony-clay;
+    background: $white;
+    box-shadow: none;
+    margin-top: 0;
+    position: absolute;
+    margin-top: -1.2rem;
+  }
+}

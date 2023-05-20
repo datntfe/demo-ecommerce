@@ -1,0 +1,232 @@
+.TrackingPage {
+  &-wrapper {
+    padding: 4rem 0 12rem;
+  }
+
+  &-back {
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    column-gap: .4rem;
+    color: $ebony-clay;
+    cursor: pointer;
+    transition: $common-transition;
+    @include hoverOpacity;
+
+    .Icon {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &-header {
+    margin-bottom: 4rem;
+
+    @media (max-width: 575px) {
+      flex-direction: column;
+      row-gap: 1.6rem;
+      align-items: flex-start !important;
+    }
+
+    &-title {
+      font-size: 2rem;
+      line-height: 2.6rem;
+      font-weight: 500;
+      color: $ebony-clay;
+      margin-bottom: 0.8rem;
+    }
+
+    &-description {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      color: $ebony-clay;
+      column-gap: 1.2rem;
+
+      span {
+        display: block;
+        height: 1.6rem;
+        width: 1px;
+        background: $gray;
+      }
+    }
+  }
+
+  &-info {
+    margin-bottom: 2.4rem;
+
+    .AddressCard {
+      height: 100%;
+    }
+  }
+
+  &-list {
+    overflow: auto;
+    padding-bottom: 1.6rem;
+
+    &-item {
+      column-gap: 2.4rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+
+      strong {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: $ebony-clay;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      del {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $silver-chalice;
+        line-height: 2rem;
+        white-space: nowrap;
+      }
+
+      &-image {
+        position: relative;
+        flex: 0 0 12rem;
+        max-width: 12rem;
+        width: 12rem;
+        height: 12rem;
+      }
+
+      &-info {
+        flex: 1;
+        min-width: 20rem;
+
+        &-subtitle {
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+          color: $ebony-clay;
+          margin-bottom: 0.8rem;
+        }
+
+        &-title {
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 2.2rem;
+          color: $dove-gray;
+        }
+      }
+    }
+
+    &-footer {
+      padding-top: 1.6rem;
+      border-top: 1px solid $silver;
+
+      &-row {
+        &:not(:last-child) {
+          margin-bottom: 1.6rem;
+        }
+      }
+
+      &-text {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+        color: $ebony-clay;
+
+        &:last-child {
+          text-align: right;
+        }
+
+        strong {
+          font-weight: 700;
+        }
+
+        span {
+          font-size: 2rem;
+          font-weight: 700;
+          color: $guardsman-red;
+        }
+
+        small {
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+          color: $gray;
+        }
+      }
+    }
+  }
+
+  &-products {
+    margin-top: 1.6rem;
+
+    .ProductHorizontal {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &-card-header {
+    &-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2.4rem;
+      color: $ebony-clay;
+      margin-bottom: .4rem;
+    }
+
+    &-description {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      color: $gray;
+    }
+  }
+
+  &-progress {
+    margin-left: .9rem;
+
+    &-item {
+      position: relative;
+      border-left: 1px solid $gray;
+      min-height: 10rem;
+      padding: 0 1rem 1rem calc(1rem + 1.2rem);
+
+      &.active {
+        &::before {
+          box-shadow: 0px 0px 8px $gold;
+          background: $gold;
+          border: 1px solid $white;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+        min-height: unset;
+      }
+
+      &-title {
+        margin-bottom: 0.4rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+        color: $ebony-clay;
+        transform: translateY(-0.3rem);
+      }
+
+      &-description {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: $dove-gray;
+        margin-bottom: 0.8rem;
+      }
+
+      &::before {
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        top: 0rem;
+        left: 0;
+        content: '';
+        background: $gray;
+      }
+    }
+  }
+}

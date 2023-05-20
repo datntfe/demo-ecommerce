@@ -1,0 +1,315 @@
+// CSS CALCULATE UNIT MIXINS
+
+@function rem($px, $base: $font_size_rem) {
+  @if (unitless($px)) {
+    $px: $px * 1px;
+  }
+
+  @if (unitless($base)) {
+    $base: $base * 1px;
+  }
+
+  @return ($px / $base) * 1rem;
+}
+
+@function em($px, $base: 16px) {
+  @if (unitless($px)) {
+    $px: $px * 1px;
+  }
+
+  @if (unitless($base)) {
+    $base: $base * 1px;
+  }
+
+  @return ($px / $base) * 1em;
+}
+
+@function vh($px, $base: 1080px) {
+  @return ($px / $base) * 100vh;
+}
+
+@function vw($px, $base: 1920px) {
+  @return ($px / $base) * 100vw;
+}
+
+@function px($val) {
+  @return $val * 1px;
+}
+
+@function fcLineHeight($line, $font_size) {
+  @return $line/$font_size;
+}
+
+@mixin lineHeight($line, $font_size) {
+  line-height: fcLineHeight($line, $font_size);
+}
+
+@mixin bg-classes($name, $color) {
+  .bg-#{$name} {
+    background: $color;
+  }
+}
+
+@mixin color-classes($name, $color) {
+  .color-#{$name} {
+    color: $color;
+  }
+}
+
+@mixin fill-classes($name, $color) {
+  .fill-#{$name} {
+    fill: $color;
+  }
+}
+
+@mixin stroke-classes($name, $color) {
+  .stroke-#{$name} {
+    stroke: $color;
+  }
+}
+
+@mixin classes-ultils($colors) {
+
+  @each $key,
+  $color in $colors {
+    @include color-classes($key, $color);
+    @include bg-classes($key, $color);
+  }
+}
+
+@mixin render-custom-cols($wrap-col, $ofCols) {
+  @for $i from 1 through $wrap-col {
+    .col-#{$i} {
+      flex: 0 0 ((($i / $ofCols) * ($ofCols/$wrap-col)) * 100%);
+      max-width: ((($i / $ofCols) * ($ofCols/$wrap-col)) * 100%);
+    }
+
+    .offset-#{$i} {
+      margin-left: ((($i / $ofCols) * ($ofCols/$wrap-col)) * 100%);
+    }
+  }
+}
+
+// MEDIA QUERY MIXINS
+
+@mixin min-aspect-ratio-tablet {
+  @media (min-aspect-ratio: 2/3) {
+    @content;
+  }
+}
+
+@mixin max-aspect-ratio-tablet {
+  @media (max-aspect-ratio: 2/3) {
+    @content;
+  }
+}
+
+// query xs
+@mixin min-xs {
+  @media (min-width: #{$screen-xs}) {
+    @content;
+  }
+}
+
+@mixin max-xs {
+  @media (max-width: #{$screen-xs - 1px}) {
+    @content;
+  }
+}
+
+// query sm
+@mixin min-sm {
+  @media (min-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin max-sm {
+  @media (max-width: #{$screen-sm - 1px}) {
+    @content;
+  }
+}
+
+// query md
+
+@mixin max-md {
+  @media (max-width: #{$screen-md - 1px}) {
+    @content;
+  }
+}
+
+@mixin min-md {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+// query lg
+
+@mixin max-lg {
+  @media (max-width: #{$screen-lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin min-lg {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+// query ml
+
+@mixin max-ml {
+  @media (max-width: #{$screen-ml - 1px}) {
+    @content;
+  }
+}
+
+@mixin min-ml {
+  @media (min-width: #{$screen-ml}) {
+    @content;
+  }
+}
+
+// query xl
+
+@mixin max-xl {
+  @media (max-width: #{$screen-xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin min-xl {
+  @media (min-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+// query xxl
+
+@mixin max-xxl {
+  @media (max-width: #{$screen-xxl - 1px}) {
+    @content;
+  }
+}
+
+@mixin min-xxl {
+  @media (min-width: #{$screen-xxl}) {
+    @content;
+  }
+}
+
+// md to lg and md to ml
+
+@mixin md-to-lg {
+  @media (min-width: #{$screen-md}) and (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin md-to-ml {
+  @media (min-width: #{$screen-md}) and (max-width: #{$screen-ml}) {
+    @content;
+  }
+}
+
+// lg to ml
+
+@mixin lg-to-ml {
+  @media (min-width: #{$screen-lg}) and (max-width: #{$screen-ml}) {
+    @content;
+  }
+}
+
+// dynamic media query
+
+@mixin min-size($size) {
+  @media (min-width: #{$size}) {
+    @content;
+  }
+}
+
+@mixin max-size($size) {
+  @media (max-width: #{$size}) {
+    @content;
+  }
+}
+
+@mixin ellipsis($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+@mixin centerScaleImage {
+  display: flex;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+  }
+}
+
+@mixin centerOriginImage {
+  display: flex;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+  }
+}
+
+
+@mixin centerAbsolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin fullAbsolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@mixin hoverOpacity {
+  opacity: 1;
+  transition: $common-transition;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@mixin hoverIconColor($color) {
+
+  .fill,
+  .stroke {
+    transition: $common-transition;
+  }
+
+  &.active,
+  &:hover {
+    .fill {
+      fill: $color;
+    }
+  }
+  &.active,
+  &:hover {
+    .stroke {
+      stroke: $color;
+    }
+  }
+}

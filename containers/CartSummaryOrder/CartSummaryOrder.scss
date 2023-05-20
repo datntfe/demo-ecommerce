@@ -1,0 +1,64 @@
+.CartSummaryOrder {
+  &-products {
+    .ProductHorizontal {
+      &:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+
+  &-bill {
+    &-row {
+      margin-bottom: 1.6rem;
+
+      &.form {
+        margin-bottom: 4rem;
+        border-radius: .8rem;
+        border: 1px solid $ebony-clay;
+
+        .Input {
+          flex: 1;
+
+          * {
+            cursor: pointer !important;
+          }
+
+          .ant-input-affix-wrapper {
+            border-radius: .8rem;
+            border: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+        }
+
+        .Button {
+          flex: 0 0 11rem;
+          max-width: 11rem;
+          border: none;
+          border-radius: .8rem;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+
+    &-text {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      color: $gray;
+
+      &.voucher-available {
+        color: $dodger-blue;
+        font-weight: 600;
+        line-height: 2.4rem;
+      }
+
+      strong {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $ebony-clay;
+        line-height: 2.4rem;
+      }
+    }
+  }
+}

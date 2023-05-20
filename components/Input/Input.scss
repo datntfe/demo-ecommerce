@@ -1,0 +1,93 @@
+.Input {
+  .ant-input {
+    padding: .4rem 1.2rem;
+    height: 4.4rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    background: transparent;
+    color: $ebony-clay;
+    border-radius: .4rem;
+    border-color: $silver;
+
+    &.ant-input-lg {
+      height: 5.2rem;
+      padding: .4rem 1.2rem;
+    }
+
+    &:focus,
+    &.ant-input-focused,
+    &:not(.ant-input-disabled):hover {
+      border-color: $amber;
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    background: $white;
+    border-radius: .4rem;
+    border-color: $silver;
+    padding: 0;
+
+    &:focus,
+    &.ant-input-affix-wrapper-focused,
+    &:not(.ant-input-affix-wrapper-disabled):hover {
+      border-color: $amber;
+    }
+
+    &.ant-input-affix-wrapper-sm {
+      .ant-input {
+        height: 3.6rem;
+        padding: .4rem 1.2rem;
+      }
+    }
+
+    &.ant-input-affix-wrapper-lg {
+      .ant-input {
+        height: 5.2rem;
+        padding: .4rem 1.2rem;
+      }
+    }
+
+    .ant-input {
+      padding: .8rem 1.2rem;
+      border-radius: unset;
+    }
+  }
+
+  &.no-affix-border {
+    .Input {
+
+      &-prefix,
+      &-suffix {
+        border: none;
+        padding: 0;
+      }
+    }
+  }
+
+  &-suffix {
+    padding-left: .8rem;
+    border-left: 1px solid $silver;
+  }
+
+  &-prefix {
+    padding-right: .8rem;
+    border-right: 1px solid $silver;
+  }
+
+  .ant-input-prefix {
+    padding: 0 0rem 0 1.2rem;
+    margin-right: 0;
+  }
+
+  .ant-input-suffix {
+    padding: 0 1.2rem 0 0.8rem;
+    margin-left: 0;
+  }
+
+  .ant-input-prefix,
+  .ant-input-suffix {
+    .Icon {
+      width: 2rem;
+    }
+  }
+}

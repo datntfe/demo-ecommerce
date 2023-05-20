@@ -1,0 +1,25 @@
+.DatePicker {
+  .ant-picker {
+    width: 100%;
+    padding: .4rem 1.2rem;
+    height: 4.4rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    background: transparent;
+    color: $ebony-clay;
+    border-radius: .4rem;
+    border-color: $silver;
+  
+    &.ant-picker-lg {
+      height: 5.2rem;
+      padding: .4rem 1.2rem;
+    }
+
+    &:focus,
+    &.ant-picker-focused,
+    &:not(.ant-picker-disabled):hover {
+      border-color: $amber;
+    }
+  }
+  
+}

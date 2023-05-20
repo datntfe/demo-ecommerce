@@ -1,0 +1,35 @@
+.fixed-label{
+  display: none;
+  opacity: 0;
+    min-width: 100px;
+    position: fixed;
+    top: 30%;
+    right: 60px;
+    // left: calc(50% + 600px);
+    font-size: 12px;
+    @media (min-resolution: 125dpi) {
+      // left: calc(50% + 540px);
+    }
+    z-index: 9;
+    .top {
+      // padding: 20px 12px;
+      background-color: #fff;
+      border-radius: 2px;
+      box-shadow: 0px 2px 18px rgba(13, 13, 13, 0.2);
+      text-align: center;
+      .text-orange {
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: 16px;
+      }
+      .text-gray3 {
+        padding-top: 16px;
+      }
+      .coin {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    @media only screen and (max-width: 1199px) {
+      display: none;
+    }
+  }

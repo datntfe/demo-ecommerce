@@ -1,0 +1,259 @@
+.big-title-1 {
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+}
+.big-title-2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -1px;
+}
+
+.heading-1{
+    font-weight: 600;
+font-size: 30px;
+line-height: 134%;
+    letter-spacing: -0.5px;
+}
+
+.heading-2{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+}
+
+.heading-3{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 135%;
+}
+.heading-04{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.heading-05{
+    font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+}
+
+.heading-06{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.headline-01{
+
+    font-weight: 500;
+font-size: 20px;
+line-height: 130%;
+}
+.headline-02{
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+}
+.headline-03{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+.description{
+    letter-spacing: -0.5px;
+    font-weight: 400;
+font-size: 18px;
+line-height: 142%;
+}
+
+.botton-sizem{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 145%;
+}
+.botton-label{
+    font-weight: 700;
+font-size: 16px;
+line-height: 140%;
+}
+
+.body-01{
+    font-weight: 400;
+font-size: 16px;
+line-height: 135%;
+}
+
+.headline-04{
+    font-weight: 500;
+font-size: 14px;
+line-height: 130%;
+}
+.body-02{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.small-caption{
+    font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+letter-spacing: -0.2px;
+}
+.extra-small{
+    font-weight: 600;
+font-size: 8px;
+line-height: 150%;
+}
+.display-01{
+    letter-spacing: -1px;
+    font-weight: 500;
+font-size: 56px;
+line-height: 110%;
+}
+
+.display-02{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 135%;
+    letter-spacing: -0.5px;
+}
+
+.display-03{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+}
+.body-04{
+    font-weight: 400;
+font-size: 14px;
+line-height: 130%;
+}
+.mobile-heading-03{
+    font-weight: 600;
+font-size: 18px;
+line-height: 135%;
+}
+.underline-14{
+    font-weight: 700;
+font-size: 14px;
+line-height: 140%;
+text-decoration-line: underline;
+
+}
+.big-title-2-mobile{
+    font-weight: 700;
+font-size: 24px;
+line-height: 125%;
+}
+
+@media only screen and (max-width: 1199px) {
+    .big-title-2-mobile{
+
+    font-size: 20px;
+
+    }
+    .mobile-heading-03{
+        font-size: 16px;
+    }
+    .big-title-1 {
+
+        font-size: 32px;
+
+      }
+      .big-title-2 {
+      
+          font-size: 24px;
+       
+      }
+      
+      .heading-1{
+
+      font-size: 24px;
+
+      }
+      
+      .heading-2{
+
+          font-size: 22px;
+
+      }
+      
+      .heading-3{
+
+          font-size: 18px;
+
+      }
+      .heading-04{
+        font-size: 18px;
+      }
+      .heading-05{
+    font-size: 14px;
+    line-height: 20px;
+    }
+      
+      .headline-01{
+      
+          font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+      }
+      .headline-02{
+      
+
+          font-size: 16px;
+   
+      }
+      .headline-03{
+    
+          font-size: 14px;
+
+      }
+      .description{
+
+      font-size: 16px;
+
+      }
+      
+      .botton-label{
+
+      font-size: 14px;
+
+      }
+      .body-01{
+
+      font-size: 14px;
+
+      }
+      
+
+      .display-01{
+
+      font-size: 40px;
+
+      }
+      
+      .display-02{
+     
+          font-size: 22px;
+ 
+      }
+      
+      .display-03{
+  
+          font-size: 22px;
+
+      }
+      .body-04{
+
+      font-size: 13px;
+
+      }
+        
+}

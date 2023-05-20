@@ -1,0 +1,49 @@
+.Checkbox {
+  .ant-checkbox-wrapper {
+    width: 100%;
+  }
+
+  .ant-checkbox {
+    transform: translateY(1.5px);
+
+    &+span {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.2rem;
+      color: $ebony-clay;
+      padding: 0 1.2rem;
+    }
+
+    .ant-checkbox-inner {
+      width: 2rem;
+      height: 2rem;
+      border-width: 2px;
+      border-radius: .2rem;
+      border-color: $gray;
+
+      &::after {
+        width: 0.9rem;
+        height: 0.8rem;
+        border: none;
+        background-image: url("data:image/svg+xml,%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.929199 4.85319L2.43194 6.78529C2.48265 6.85117 2.54762 6.90471 2.62199 6.94189C2.69635 6.97907 2.77817 6.99893 2.8613 6.99996C2.94309 7.00091 3.02407 6.98362 3.09834 6.94934C3.17261 6.91506 3.23831 6.86466 3.29065 6.8018L8.08512 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-size: cover;
+        background-position: center;
+        top: 50%;
+        left: 50%;
+        transform: scale(1) translate(-50%, -50%);
+      }
+    }
+
+    &.ant-checkbox-checked {
+      &::after {
+        border-color: $ebony-clay;
+        border-radius: .5rem;
+      }
+
+      .ant-checkbox-inner {
+        background-color: $ebony-clay;
+        border-color: $ebony-clay;
+      }
+    }
+  }
+}

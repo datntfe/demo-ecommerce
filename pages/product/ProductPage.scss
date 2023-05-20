@@ -1,0 +1,29 @@
+.ProductPage {
+  background: $alabaster;
+  padding-bottom: 3.2rem;
+
+  .ProductsCarousel {
+    padding: 1.6rem;
+    background: $white;
+    border-radius: .4rem;
+  }
+
+  .ProductDetail,
+  .ProductsCarousel,
+  .Tabs,
+  .ShopCard {
+    margin-bottom: 3.2rem;
+  }
+
+  .Tabs {
+    .ant-tabs {
+      .ant-tabs-tab {
+        padding: 0.8rem 5rem;
+
+        &.ant-tabs-tab-active {
+          background: transparent;
+        }
+      }
+    }
+  }
+}

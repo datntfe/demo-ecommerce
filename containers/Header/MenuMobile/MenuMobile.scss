@@ -1,0 +1,87 @@
+.MenuMobile {
+  display: none;
+
+  @media (max-width: 991px) {
+    display: block;
+  }
+
+  .ant-drawer-content-wrapper {
+    height: 90vh !important;
+
+    .ant-drawer-content {
+      border-top-left-radius: .8rem;
+      border-top-right-radius: .8rem;
+
+      .ant-drawer-header {
+        padding: 1.6rem;
+      }
+
+      .ant-drawer-body {
+        padding: 2.4rem;
+      }
+
+      .ant-drawer-header-title {
+        display: flex;
+        justify-content: flex-end;
+
+        .ant-drawer-close {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &-title {
+    position: relative;
+    font-size: 1.8rem;
+    color: $ebony-clay;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: -.5rem;
+      left: 0;
+      width: 4rem;
+      height: 2px;
+      background: $gold;
+    }
+  }
+
+  &-wrapper {
+    position: relative;
+
+    .Header-search {
+      display: block;
+      margin: 0 0 1.6rem;
+    }
+  }
+
+  &-close {
+    cursor: pointer;
+  }
+
+  &-list {
+    padding: 0;
+    list-style: none;
+    column-gap: 1.6rem;
+    margin-bottom: 2.4rem;
+
+    &-item {
+      flex: 0 0 calc(50% - 0.8rem);
+      max-width: calc(50% - 0.8rem);
+
+      .Header-text {
+        color: $ebony-clay;
+        font-size: 1.6rem;
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  .Header-download {
+    padding: 1rem 0;
+  }
+}

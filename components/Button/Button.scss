@@ -1,0 +1,184 @@
+.Button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: $common-transition;
+  column-gap: .8rem;
+  width: 100%;
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+
+  &.radius {
+    border-radius: .8rem;
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.small {
+    height: 3.8rem;
+    padding: .4rem 1.2rem;
+
+    .Button {
+      &-title {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+      }
+
+      &-icon {
+        .Icon {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+
+  &.middle {
+    height: 4rem;
+    padding: .4rem 1.2rem;
+
+    .Button {
+      &-title {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+
+      &-icon {
+        .Icon {
+          transform: translateY(-10%);
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+
+  &.large {
+    height: 5.2rem;
+    padding: .4rem 1.6rem;
+
+    .Button {
+      &-title {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+      }
+
+      &-icon {
+        .Icon {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
+    }
+  }
+
+  &.primary {
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      width: 2.2rem;
+      height: 2.2rem;
+      content: '';
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(180deg, $gold 3.5%, $amber 96.6%);
+      clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+  }
+
+  &-title {
+    font-weight: 700;
+  }
+
+  &.PRIMARY {
+    background: $ebony-clay;
+    border: 2px solid $ebony-clay;
+
+    .Button {
+      &-title {
+        background: linear-gradient(180deg, $gold 3.5%, $amber 96.6%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+  }
+
+  &.OUTLINE_BLACK {
+    border: 2px solid $ebony-clay;
+    background: $white;
+
+    .Button {
+      &-title {
+        color: $ebony-clay;
+      }
+    }
+  }
+
+  &.OUTLINE_WHITE {
+    border: 2px solid $white;
+    background: transparent;
+
+    .Button {
+      &-title {
+        color: $white;
+      }
+    }
+  }
+
+  &.WHITE {
+    border: none;
+    background: $white;
+
+    .Button {
+      &-title {
+        color: $ebony-clay;
+      }
+    }
+  }
+
+  &.DEFAULT {
+    background: transparent;
+
+    .Button {
+      &-title {
+        color: $ebony-clay;
+      }
+    }
+  }
+
+  &.BLACK {
+    background: $black;
+    border: none;
+
+    .Button {
+      &-title {
+        color: $white;
+      }
+    }
+  }
+
+  &.YELLOW {
+    background: linear-gradient(180deg, $gold 3.5%, $amber 96.6%);
+
+
+    .Button {
+      &-title {
+        color: $ebony-clay;
+      }
+    }
+  }
+}

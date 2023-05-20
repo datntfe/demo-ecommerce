@@ -1,0 +1,153 @@
+.CartProducts {
+  &-main-wrapper {
+    overflow: auto;
+
+    @media (max-width: 768px) {
+      border-radius: .2rem;
+      border: 1px solid $gray;
+    }
+  }
+
+  &-group {
+    padding: 1.2rem 1.6rem;
+    border-radius: .2rem;
+    border: 1px solid $gray;
+
+    &:not(:last-child) {
+      margin-bottom: 2.4rem;
+
+      @media (max-width: 768px) {
+        margin-bottom: 0rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      min-width: 78rem;
+      border: none;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $gray;
+      }
+    }
+
+    &-header {
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid $silver;
+      margin-bottom: 1.6rem;
+      column-gap: 1.6rem;
+    }
+
+    &-subtitle,
+    &-title {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      font-weight: 600;
+      color: $ebony-clay;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    &-subtitle {
+      margin-top: 0.8rem;
+      color: $dove-gray;
+      font-weight: 500;
+    }
+
+    &-text {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      color: $mine-shaft;
+
+      del {
+        color: $silver-chalice;
+      }
+    }
+
+    &-information {
+      column-gap: 2.4rem;
+
+      &-image {
+        position: relative;
+        width: 12rem;
+        flex: 0 0 12rem;
+        max-width: 12rem;
+        height: 12rem;
+      }
+    }
+
+    &-body {
+      column-gap: 1.6rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+
+      &-item {
+        &.tick {
+          flex: 0 0 3.2rem;
+          max-width: 3.2rem;
+        }
+
+        &.information {
+          flex: 1;
+          min-width: 30rem;
+        }
+
+        &.price {
+          flex: 0 0 11rem;
+          max-width: 11rem;
+        }
+
+        &.amount {
+          flex: 0 0 9rem;
+          max-width: 9rem;
+        }
+
+        &.total {
+          flex: 0 0 11rem;
+          max-width: 11rem;
+        }
+
+        &.action {
+          cursor: pointer;
+          flex: 0 0 3.2rem;
+          max-width: 3.2rem;
+
+          .Icon {
+            width: 2.4rem;
+            height: 2.4rem;
+          }
+        }
+
+        &.shop,
+        &.arrow {
+          cursor: pointer;
+        }
+
+        &.shop {
+          flex: 1;
+        }
+
+        &.arrow {
+          margin-left: auto;
+
+          .Icon {
+            width: 3.2rem;
+            height: 3.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  &-submit {
+    margin-top: 2.6rem;
+
+    .Button {
+      max-width: 30rem;
+      width: 100%;
+    }
+  }
+}

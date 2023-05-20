@@ -1,0 +1,39 @@
+.margin-bottom-mobile {
+  margin-right: 24px;
+}
+.hide-desktop{
+  display: none !important;
+}
+
+@media only screen and (max-width: 1199px) {
+  .margin-bottom-mobile {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+  .hide-desktop{
+    display: block !important;
+  }
+
+  .w-50-responsive {
+    width: 100%;
+
+    &.mr-4 {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1199px) {
+  .font-size20 {
+    font-size: 18px;
+  }
+
+  .mb-64 {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,22 @@
+.Drawer {
+  .ant-drawer-content-wrapper {
+    .ant-drawer-content {
+      .ant-drawer-header {
+        padding: 1.6rem;
+      }
+
+      .ant-drawer-body {
+        padding: 2.4rem;
+      }
+
+      .ant-drawer-header-title {
+        display: flex;
+        justify-content: flex-end;
+
+        .ant-drawer-close {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

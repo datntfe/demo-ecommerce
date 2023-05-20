@@ -1,0 +1,41 @@
+.Empty {
+  &-icon {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 0 auto 2.4rem;
+    border: 2px solid $black;
+    padding: 1.5rem;
+
+    &-wrapper {
+      background: $alabaster;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: flex;
+
+      .Icon {
+        margin: auto;
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  &-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    color: $black;
+  }
+
+  &-text {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: $dove-gray;
+  }
+}

@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'clockicons';
+  src: url('/fonts/clockicons.ttf');
+}
+@font-face {
+  font-family: 'VPS Son La Hoa';
+  src: url('/fonts/vpssolah.ttf');
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 30px;
+  color: white;
+}
+
+#__next {
+  background-color: black;
+  height: 100vh;
+}
+.time {
+  font-family: 'clockicons', sans-serif;
+  font-size: 2rem;
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 1em;
+  }
+}
+.time-text {
+  font-family: 'VPS Son La Hoa', sans-serif;
+  display: inline;
+  font-size: 1rem;
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 0.5rem;
+  }
+}
+h2 {
+  font-family: 'VPS Son La Hoa', sans-serif;
+  text-transform: lowercase;
+  font-size: 0.5rem;
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 0.5rem;
+  }
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

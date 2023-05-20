@@ -1,0 +1,26 @@
+.Amount {
+  &-wrapper {
+    column-gap: 1.6rem;
+  }
+
+  &-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+  }
+
+  .Button {
+    max-width: 2.4rem;
+    flex: 0 0 2.4rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0;
+    border-radius: .4rem;
+
+    .Icon {
+      margin-top: -0.4rem;
+      width: 1.6rem !important;
+      height: 1.6rem !important;
+    }
+  }
+}

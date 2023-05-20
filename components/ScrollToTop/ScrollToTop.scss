@@ -1,0 +1,26 @@
+.ScrollToTop {
+  position: fixed;
+  right: 1.6rem;
+  bottom: 3.2rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  cursor: pointer;
+  z-index: 5;
+  display: flex;
+  border-radius: 50%;
+  background: rgba($black, 0.6);
+  transition: $common-transition;
+  opacity: 0;
+  pointer-events: none;
+
+  &.active {
+    pointer-events: unset;
+    opacity: 1;
+  }
+
+  .Icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: auto;
+  }
+}

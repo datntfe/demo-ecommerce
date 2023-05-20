@@ -1,0 +1,140 @@
+.wrap-login,.popup-login{
+
+  padding: 80px 0px;
+  .login-content {
+    background: #ffffff;
+    // box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    width: 550px;
+    padding:40px;
+  }
+  .title {
+
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  .login-wrap {
+
+  }
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #fdd116;
+  }
+  .ant-checkbox-inner {
+    border-radius: 50%;
+    border-color: #fdd116;
+  }
+
+  .input-text {
+  }
+  .email-field {
+    margin-top: 40px;
+  }
+  .password-field {
+    margin-top: 20px;
+    position: relative;
+  }
+  .forget-text {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    line-height: 1em;
+  }
+  .icon-view-pass {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    cursor: pointer;
+  }
+  .button-login {
+    background: $primary;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 0;
+    margin-top: 40px;
+    color:#fff;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    &::before{
+      width: 40px;
+      height: 40px;
+      content: "";
+      background: linear-gradient(180deg, #FFD600 3.5%, #FFC200 96.6%);
+      position: absolute;
+      right: -20px;
+      bottom: -20px;
+      transform: rotate(45deg);
+    }
+  }
+  .text-or {
+    color: $text_gray2;
+    background: #fff;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .line-1 {
+    width: 100%;
+    height: 1px;
+    background-color: #cccccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  .button-social {
+    border-radius: 8px;
+    padding: 7px 0;
+  }
+  .google {
+    color: $primary;
+    border: 1px solid $primary;
+    width: 140px;
+    margin-right: 10px;
+  }
+
+  .PhoneInputInput {
+    border: none;
+    width: 60px;
+    line-height: 1em;
+    font-weight: 700;
+  }
+  .PhoneInputInput:disabled {
+    background: none;
+  }
+  .PhoneInput {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #cccccc;
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+  .input-phone {
+    border: 1px solid #1A1A1A;
+    padding: 8px 15px;
+    display: flex;
+   align-items: center;
+   border-radius: 8px;
+  }
+  .input-phone.error-input{
+    border: 1px solid $danger;
+  }
+  .input-short {
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 1em;
+  }
+  .input-login{
+      padding:17px 10px;
+      border-radius: 8px;
+  }
+  .border-bottom{
+    border-bottom:1px solid $primary;
+    line-height: 1em;
+  }
+};

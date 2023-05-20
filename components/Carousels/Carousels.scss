@@ -1,0 +1,35 @@
+.Carousels {
+  .slick-arrow {
+    padding: 0;
+    width: unset;
+    height: unset;
+    transition: $common-transition;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    &.slick-disabled {
+      opacity: 0 !important;
+    }
+
+    .Icon {
+      width: 2.8rem !important;
+      height: 2.8rem !important;
+    }
+
+    &.slick-prev {
+      left: 0;
+      transform: translate(-100%, -50%);
+    }
+
+    &.slick-next {
+      right: 0;
+      transform: translate(100%, -50%);
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}

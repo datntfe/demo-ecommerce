@@ -1,0 +1,102 @@
+.UserNavigation {
+  &-item {
+    padding: 1.6rem;
+    column-gap: 1.2rem;
+    border-radius: .8rem;
+    transition: $common-transition;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: .4rem;
+
+    &.active,
+    &:hover {
+      background: $gallery;
+    }
+
+    &.active {
+      &>span {
+        color: $black;
+        font-weight: 700;
+      }
+    }
+
+    span {
+      transition: $common-transition;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.2rem;
+      color: $ebony-clay;
+    }
+
+    .Icon {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &-body {
+    padding-left: calc(1.6rem + 2.4rem);
+  }
+
+  &-empty {
+    .ant-collapse-expand-icon {
+      display: none;
+    }
+  }
+
+  .ant-collapse {
+    border: none;
+    background: none;
+
+    &>.ant-collapse-item {
+      border: none;
+
+      .ant-collapse-expand-icon {
+        .Icon {
+          transition: $common-transition;
+        }
+      }
+
+      &.ant-collapse-item-active {
+        .ant-collapse-expand-icon {
+          .Icon {
+            transform: translateY(-50%) rotate(180deg);
+          }
+        }
+
+        .UserNavigation {
+          &-header {
+            .UserNavigation-item {
+              background: $gallery;
+
+              span {
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ant-collapse-header {
+      padding: 0 !important;
+    }
+
+    .ant-collapse-content {
+      padding-top: 0;
+      border: none;
+      background: none;
+
+      &>.ant-collapse-content-box {
+        padding: 0;
+      }
+    }
+  }
+
+  &Drawer {
+    .AddressCard {
+      border: none;
+      padding: 0;
+    }
+  }
+}

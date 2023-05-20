@@ -1,0 +1,44 @@
+.VoucherBox {
+  background: $white;
+  box-shadow: 0px 0px 1.2rem rgba($black, 0.1);
+  border-radius: .8rem;
+  padding: 1.2rem 2.4rem;
+  border: 1px solid $black;
+  transition: $common-transition;
+  cursor: pointer;
+
+  &.active,
+  &:hover {
+    border-color: $dodger-blue;
+  }
+
+  &-header {
+    column-gap: .8rem;
+    margin-bottom: 1.6rem;
+
+    .Icon {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: $ebony-clay;
+    }
+  }
+
+  &-body {
+    margin-bottom: 1.6rem;
+
+    &-item {
+      margin-bottom: 1.2rem;
+
+      &-text {
+        color: $ebony-clay;
+        font-weight: 400;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

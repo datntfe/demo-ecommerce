@@ -1,0 +1,115 @@
+.wallet-view {
+    padding: 36px 30px;
+    border-radius: 8px;
+    background: url('/svg/wallet-bg.svg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    @media only screen and (max-width: 1199px) {
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+    button {
+      background: #FFFFFF;
+      border-radius: 2px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      width: 180px;
+      display: flex;
+      justify-content: center;
+      @media only screen and (max-width: 1199px) {
+        width: 90px;
+        padding:5px 10px
+      }
+    }
+    .small {
+      color: #fff;
+      opacity: 0.6;
+    }
+    .coin {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 32px;
+    }
+  }
+  .input-amount{
+    input {
+      width: 400px;
+      border:1px solid #000;
+      color: #858585;
+      font-size: 16px;
+      @media only screen and (max-width: 1199px) {
+        width: 100%;
+      }
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  .transfer-page{
+    .wrap-transfer-input{
+      display: flex;
+      justify-content: space-between;
+      @media only screen and (max-width: 1199px) {
+        flex-direction: column;
+      }
+    }
+    .input-phone{
+      display: flex;
+      align-items:center;
+      border:1px solid #000;
+      font-size: 16px;
+      height: 58px;
+      padding: 0px 10px;
+      width:400px;
+      justify-content:space-between;
+      border-radius: 8px;
+      @media only screen and (max-width: 1199px) {
+        width: 100%;
+      }
+      input{
+        border:none;
+        color: #858585;
+      }
+      &.error-input{
+        border-color:$danger!important;
+      }
+  
+    }
+    .PhoneInputInput {
+      border: none;
+      width: 60px;
+      line-height: 1em;
+      font-weight: 700;
+    }
+    .PhoneInputInput:disabled {
+      background: none;
+    }
+    .input-short {
+      border: none;
+      width: 100%;
+      padding-left: 10px;
+      font-size: 16px;
+      line-height: 1em;
+    }
+    .input-login {
+      padding: 17px 10px;
+      border-radius: 8px;
+    }
+
+
+  }
+

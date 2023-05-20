@@ -1,0 +1,133 @@
+.Header {
+  transition: $common-transition;
+
+  &.shadow {
+    box-shadow: 0 0 10px rgba($black, 0.5);
+  }
+
+  &-wrapper {
+    &-item {
+
+      &:last-child,
+      &:first-child {
+        padding: 1.2rem 0;
+        background: $ebony-clay;
+
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(2) {
+        background: $white;
+        padding: 1.5rem 0;
+      }
+    }
+  }
+
+  &-line {
+    width: 1px;
+    height: 12px;
+    background: $white;
+  }
+
+  &-text {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: $white;
+    white-space: nowrap;
+    @include ellipsis(1);
+  }
+
+  &-logo {
+    display: block;
+    width: 12.3rem;
+    height: 3rem;
+  }
+
+  &-cart {
+    cursor: pointer;
+    position: relative;
+
+    &-badge {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: 50%;
+      background: $red-orange;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $white;
+    }
+
+    .Icon {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+
+  &-account {
+    column-gap: .8rem;
+  }
+
+  &-search {
+    max-width: 68rem;
+    margin-left: auto;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+      display: none;
+    }
+  }
+
+  &-btn-menu {
+    display: none;
+
+    @media (max-width: 991px) {
+      display: block;
+      width: 3.6rem;
+      height: 3.6rem;
+      border-radius: .4rem;
+      display: flex;
+      background: $ebony-clay;
+      cursor: pointer;
+      @include hoverOpacity;
+
+      .Icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin: auto;
+      }
+    }
+  }
+
+  &-carousel {
+    padding: 0 2.5rem;
+
+    .slick-slide {
+      &>div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+
+    &-item {
+      text-align: center;
+
+      a {
+        padding: .3rem 1rem;
+        display: block;
+      }
+    }
+  }
+
+  &-download {
+    display: block;
+  }
+}

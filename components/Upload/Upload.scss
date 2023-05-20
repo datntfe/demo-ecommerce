@@ -1,0 +1,12 @@
+.Upload {
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed !important;
+  }
+
+  &-input {
+    display: none !important;
+  }
+}

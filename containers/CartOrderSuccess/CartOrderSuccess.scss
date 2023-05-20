@@ -1,0 +1,39 @@
+.CartOrderSuccess {
+  padding: 6.4rem 0;
+  max-width: 105.6rem;
+  margin: 0 auto;
+
+  &-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    line-height: 4rem;
+    color: $ebony-clay;
+    text-align: center;
+  }
+
+  &-description {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: $ebony-clay;
+    text-align: center;
+
+    span {
+      font-weight: 600;
+      color: $dodger-blue;
+    }
+  }
+
+  &-order-code {
+    margin: 2.4rem 0 3.2rem;
+    column-gap: .8rem;
+  }
+
+  &-submit {
+    margin-top: 3.2rem;
+
+    .Button {
+      width: fit-content;
+    }
+  }
+}

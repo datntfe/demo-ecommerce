@@ -1,0 +1,7 @@
+export enum EKeyCartStep {
+  CART = 'CART',
+  DELIVERY = 'DELIVERY',
+  PAYMENT = 'PAYMENT',
+  TRANSFER = 'TRANSFER',
+  SUCCESS = 'SUCCESS',
+}

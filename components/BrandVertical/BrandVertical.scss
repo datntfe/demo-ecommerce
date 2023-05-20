@@ -1,0 +1,51 @@
+.BrandVertical {
+  &:hover {
+    cursor: pointer;
+
+    .BrandVertical {
+      &-image {
+        @include hoverOpacity;
+      }
+
+      &-info {
+        &-title {
+          color: $gold;
+        }
+      }
+    }
+  }
+
+  &-image {
+    position: relative;
+    width: 100%;
+    max-width: 41rem;
+    height: 41rem;
+    margin: 0 auto;
+    background: $alabaster;
+    transition: $common-transition;
+
+    @media (max-width: 1200px) {
+      max-width: 30rem;
+      height: 30rem;
+    }
+
+    @media (max-width: 575px) {
+      max-width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  &-info {
+    padding: 2.4rem 1.2rem;
+
+    &-title {
+      transition: $common-transition;
+      font-size: 2.2rem;
+      line-height: 2.9rem;
+      font-weight: 600;
+      color: $ebony-clay;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.cart{
+    margin-bottom: 50px;
+    .title-page {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .left{
+        width: 840px;
+    }
+    .filter{
+        background: #F0F0F0;
+        border-radius: 8px;
+        display: flex;
+        align-items:center;
+        padding:2px;
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor:pointer;
+            width: 50%;
+            text-align: center;
+            height: 40px;
+            font-weight: 700;
+font-size: 12px;
+line-height: 120%;
+border-radius: 8px;
+            &.active{
+                background-color: #222631;
+                color:#FFC200;
+            }
+        }
+    }
+    .border-cart{
+        border: 1px solid #C2C2C2;
+        border-radius: 8px;
+    }
+    .border-bottom-gray{
+        border-bottom: 1px solid #C2C2C2; 
+    }
+    .coupond{
+        border: 1px solid #000000;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        input{
+            border:none;
+            width: 100%;
+            margin-left: 5px;
+        }
+        .apply{
+            width: 140px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: $primary;
+        }
+    }
+    .right{
+        width: calc(100% - 840px);
+        padding: 0 20px;
+    }
+    @media only screen and (max-width: 1199px) {
+        .left{
+            width: 100%;
+        }
+        .right{
+            width: 100%;
+  
+        }
+    }
+
+}
+
+.tab-cart{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    .tab-item{
+        @media only screen and (max-width: 1199px) {
+            width: 50%;
+            padding:10px 0px;
+        }
+        padding:10px 20px;
+        display: flex;
+        align-items:center;
+        font-weight: 700;
+        .number{
+            width: 24px;
+            height: 24px;
+            background-color:  rgba(0, 0, 0, 0.56);
+            border-radius: 50%;
+            margin-right:10px;
+            color:#fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+
+        }
+        .name{
+            color: rgba(0, 0, 0, 0.56);
+            @media only screen and (max-width: 1199px) {
+                font-size:12px;
+            }
+        }
+
+    &.active{
+
+        .number{
+            background-color: $primary;
+        }
+        .name{
+            color: $primary;
+        }
+        &.current{
+            border-bottom:2px solid #FDD116;
+        }
+    }
+
+    }
+
+    
+}
+

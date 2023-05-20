@@ -1,0 +1,55 @@
+.CategoryHeader {
+  &-wrapper {
+    column-gap: .8rem;
+  }
+
+  &-title {
+    color: $ebony-clay;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+
+    @media (max-width: 575px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &-see-all {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: $tundora;
+    white-space: nowrap;
+  }
+
+  &-countdown {
+    margin-left: 1.8rem;
+    column-gap: .4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: $ebony-clay;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $ebony-clay;
+      border-radius: .4rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      padding: .2rem .3rem;
+      line-height: 2.2rem;
+
+      span {
+        background: linear-gradient(180deg, $gold 3.5%, $amber 96.6%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+  }
+}

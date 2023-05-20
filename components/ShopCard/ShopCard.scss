@@ -1,0 +1,182 @@
+.ShopCard {
+  position: relative;
+  border-radius: .8rem;
+  overflow: hidden;
+  background: $white;
+
+  @media (max-width: 991px) {
+    .ant-row {
+      flex-direction: column;
+      row-gap: 2.4rem;
+    }
+  }
+
+  &-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  &-background {
+    @include fullAbsolute;
+    pointer-events: none;
+
+    &::before {
+      @include fullAbsolute;
+      content: '';
+      background: rgba($black, 0.5);
+      z-index: 1;
+    }
+  }
+
+  &-brand {
+    &-logo {
+      position: relative;
+      border-radius: 50%;
+      overflow: hidden;
+      background: $alabaster;
+    }
+
+    &-title {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.2rem;
+      margin-bottom: 0.4rem;
+      color: $ebony-clay;
+    }
+
+    &-subtitle {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      margin-bottom: 0.4rem;
+      color: $ebony-clay;
+    }
+
+    &-description {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.6rem;
+      color: $ebony-clay;
+    }
+  }
+
+  &-info {
+    &-item {
+      text-align: center;
+      padding: 0 1.6rem;
+
+      &:not(:last-child) {
+        border-right: 1px solid $silver;
+      }
+
+      &-title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.2rem;
+        margin-bottom: .4rem;
+        color: $dodger-blue;
+      }
+
+      &-description {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+        color: $ebony-clay;
+      }
+    }
+  }
+
+  &.large {
+    padding: 2.4rem 3.2rem;
+
+    .ShopCard {
+      &-brand {
+        column-gap: 1.6rem;
+
+        &-logo {
+          width: 4.5rem;
+          height: 4.5rem;
+        }
+      }
+
+      &-info {
+        &-item {
+          &-title {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+          }
+    
+          &-description {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.small {
+    padding: 2.2rem 2rem;
+
+    .ShopCard {
+      &-brand {
+        column-gap: 0.8rem;
+
+        &-logo {
+          width: 4.5rem;
+          height: 4.5rem;
+        }
+      }
+
+      &-info {
+        &-item {
+          &-title {
+            font-size: 1.4rem;
+            line-height: 2rem;
+          }
+    
+          &-description {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  &.background {
+    .ShopCard {
+      &-brand {
+        &-title {
+          color: $white;
+        }
+
+        &-subtitle {
+          color: $white;
+        }
+
+        &-description {
+          color: $white;
+        }
+      }
+
+      &-info {
+        &-item {
+          &-title {
+            color: $white;
+          }
+    
+          &-description {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &-btn {
+    .Button {
+      border-radius: 4rem;
+    }
+  }
+}

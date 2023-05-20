@@ -1,0 +1,16 @@
+//  CLASS COLOR
+//   .text-prinary {
+//     color: $primary
+//   }
+//   .bg-primary {
+//     background: $primary
+//   }
+
+$color_texts: (
+  'primary': $primary,
+  'success': $success,
+  'warning': $warning,
+  'danger': $danger
+) !default;
+
+// @include classes-ultils($color_texts);

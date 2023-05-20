@@ -1,0 +1,68 @@
+.Comment {
+  &-wrapper {
+    &.reply {
+      margin-top: 1.6rem;
+      padding: 1.6rem;
+      border-radius: 0px 1.6rem 1.6rem 1.6rem;
+      background: $athens-gray;
+
+      .Avatar {
+        background: darken($athens-gray, 5%);
+      }
+    }
+  }
+
+  &-header {
+    column-gap: .8rem;
+    margin-bottom: 0.8rem;
+
+    &-name {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      color: $tundora;
+      font-weight: 500;
+    }
+
+    &-badge {
+      padding: .4rem;
+      background: $white;
+      border-radius: .6rem;
+      color: $guardsman-red;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.6rem;
+    }
+
+    &-rate {
+      .Icon {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+
+  &-body {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: $dove-gray;
+  }
+
+  &-uploads {
+    margin-top: 1.6rem;
+
+    &-item {
+      position: relative;
+      width: 7.6rem;
+      height: 7.6rem;
+      border-radius: .4rem;
+      overflow: hidden;
+      cursor: pointer;
+      transition: $common-transition;
+      border: 1px solid transparent;
+
+      &:hover {
+        border-color: $gold;
+      }
+    }
+  }
+}

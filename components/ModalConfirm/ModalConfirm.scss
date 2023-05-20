@@ -1,0 +1,16 @@
+.ModalConfirm {
+  .Empty {
+    margin-bottom: 2.4rem;
+
+    &-title,
+    &-text {
+      max-width: 36rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-submit {
+    column-gap: 2.4rem;
+  }
+}

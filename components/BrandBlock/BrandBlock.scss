@@ -1,0 +1,14 @@
+.BrandBlock {
+  &-title {
+    color: $white;
+    text-align: center;
+    font-size: 6.4rem;
+    line-height: 8.3rem;
+    font-family: $font-secondary;
+    margin-bottom: 2.4rem;
+  }
+
+  .Button {
+    width: 24rem;
+  }
+}

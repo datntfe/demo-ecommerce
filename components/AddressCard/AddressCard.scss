@@ -1,0 +1,123 @@
+.AddressCard {
+  padding: 1.6rem 1.6rem 2.4rem;
+  border: 1px solid $mischka;
+  border-radius: .2rem;
+
+  &.radius {
+    border-radius: .8rem;
+  }
+
+  &-header {
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
+    border-bottom: 1px solid $silver;
+
+    @media (max-width: 575px) {
+      flex-direction: column;
+      align-items: flex-start !important;
+      row-gap: 1.6rem;
+    }
+
+    &-title {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 2.6rem;
+      color: $ebony-clay;
+      margin-bottom: 0;
+      column-gap: .4rem;
+    }
+
+    &-btns {
+      column-gap: 1.6rem;
+      margin-left: auto;
+
+      .Button {
+        white-space: nowrap;
+      }
+    }
+
+    &-icon {
+      .Icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        transform: translateY(-15%);
+      }
+    }
+
+    .Button {
+      width: fit-content;
+
+      @media (max-width: 575px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: $ebony-clay;
+    column-gap: 1.6rem;
+    margin-bottom: 1.2rem;
+
+    span {
+      height: 2rem;
+      width: 1px;
+      background: $gray;
+      display: block;
+    }
+  }
+
+  &-actions {
+    margin-top: 2.4rem;
+
+    &-col {
+      column-gap: 1.6rem;
+    }
+
+    &-item {
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 2rem;
+      color: $dodger-blue;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &.delete {
+        color: $guardsman-red;
+      }
+    }
+  }
+
+  &-badges {
+    column-gap: 1.6rem;
+    margin: -0.8rem 0;
+
+    @media (max-width: 768px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: .8rem 0 0;
+    }
+  }
+
+  &-badge {
+    column-gap: .8rem;
+    padding: .8rem 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    white-space: nowrap;
+    font-weight: 500;
+    color: $ebony-clay;
+    border-radius: .8rem;
+    background: $alabaster;
+
+    .Icon {
+      width: 1.8rem;
+      height: 1.8rem;
+      flex: 0 0 1.8rem;
+      max-width: 1.8rem;
+      margin-top: -0.4rem;
+    }
+  }
+}

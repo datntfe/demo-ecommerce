@@ -1,0 +1,23 @@
+.TextArea {
+  .ant-input {
+    padding: 1rem 1.2rem;
+    min-height: 14.4rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    background: transparent;
+    color: $ebony-clay;
+    border-radius: .4rem;
+    border-color: $silver;
+
+    &.ant-input-lg {
+      height: 5.2rem;
+      padding: .4rem 1.2rem;
+    }
+
+    &:focus,
+    &.ant-input-focused,
+    &:not(.ant-input-disabled):hover {
+      border-color: $amber;
+    }
+  }
+}

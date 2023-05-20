@@ -1,0 +1,155 @@
+header {
+  background-color: #fff;
+
+  .top {
+    background: #222631;
+    color: #fff;
+    padding: 10px 0;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .header {
+    &-line-vertical {
+      margin: 0 16px;
+      height: 11px;
+      width: 1px;
+      background: #fff;
+    }
+  }
+
+  .bottom {
+    padding: 10px 0px;
+
+    .cart-icon {
+      cursor: pointer;
+      position: relative;
+      margin-left: 24px;
+    }
+
+  }
+
+  .search-wrap {
+    background-color: #fff;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    border-radius: 8px;
+    padding: 0 20px 0 40px;
+    max-width: 680px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+
+    @media (max-width: 1200px) {
+      max-width: 560px;
+    }
+
+    & input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      width: 100%;
+      line-height: 1em;
+      margin-left: 5px;
+      font-size: 14px;
+      height: 38px;
+    }
+
+    & .search {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+    }
+  }
+
+  .avatar {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 214, 0, 1);
+    border-radius: 50%;
+
+    img {
+      vertical-align: middle;
+      max-height: 24px;
+      border-radius: 50%;
+    }
+  }
+
+  .log-out {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 140px;
+    z-index: 2;
+    background-color: #fff;
+    padding: 5px 0;
+
+    .item {
+      padding: 0 10px;
+      font-size: 13px;
+    }
+
+    .item:hover {
+      background-color: #000;
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+
+  }
+
+  .app-download {
+    position: relative;
+
+    .app-download-qr {
+      border: 3px solid #000;
+      display: none;
+      opacity: 0;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+    &:hover .app-download-qr {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .app-download {
+      &:hover .app-download-qr {
+        left: inherit;
+        transform: translateX(0);
+        right: 0;
+      }
+    }
+
+    .log-out {
+      left: inherit;
+      right: 0;
+    }
+
+    .logo-header {
+      flex-shrink: 0;
+      width: 123px;
+    }
+  }
+}

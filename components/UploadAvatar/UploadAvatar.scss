@@ -1,0 +1,46 @@
+.UploadAvatar {
+  width: 7.6rem;
+  height: 7.6rem;
+
+  &:hover {
+    .UploadAvatar-icon {
+      opacity: 1;
+    }
+  }
+
+  .UploadAvatar-wrapper,
+  .Upload-wrapper,
+  .Upload {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-wrapper {
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &-preview {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    @include centerScaleImage;
+  }
+
+  &-icon {
+    @include fullAbsolute;
+    display: flex;
+    background: rgba($ebony-clay, 0.4);
+    transition: $common-transition;
+    opacity: 0;
+
+    .Icon {
+      margin: auto;
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+}

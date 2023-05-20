@@ -1,0 +1,9 @@
+export enum EButtonStyleType {
+  PRIMARY = 'PRIMARY',
+  OUTLINE_BLACK = 'OUTLINE_BLACK',
+  DEFAULT = 'DEFAULT',
+  YELLOW = 'YELLOW',
+  BLACK = 'BLACK',
+  OUTLINE_WHITE = 'OUTLINE_WHITE',
+  WHITE = 'WHITE',
+}
